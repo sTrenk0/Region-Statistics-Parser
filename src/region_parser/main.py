@@ -72,22 +72,4 @@ def print_data_handler(
 
 
 if __name__ == "__main__":
-    # cli()
-    model = factory_registry.get_factory(
-        "staticstimes"
-    ).get_repository().get_model()
-
-    asyncio.run(_main(
-        handler=_print_data_handler(
-            "staticstimes",
-        ),
-        setup_db=setup_db(
-            model=model,
-            db_name="postgres",
-            db_user="postgres",
-            db_password="postgres",
-            db_host="localhost",
-            db_port=5432,
-            cleanup=False
-        )
-    ))
+    cli()
