@@ -1,0 +1,8 @@
+aiohttp
+beautifulsoup4
+tortoise-orm
+pydantic-settings
+requests
+asyncpg
+click
+
